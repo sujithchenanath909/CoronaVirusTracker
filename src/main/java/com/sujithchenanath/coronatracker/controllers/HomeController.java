@@ -28,4 +28,8 @@ public class HomeController {
 		return "home";
 	}
 	
+	@GetMapping("/IndiaCases")
+	public String indiacases() {	
+		return("IndiaCases");
+	}
 }

@@ -8,10 +8,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
-
+  <div class="card-header">
+  <h3>
+  COVID-19 Tracker
+  <small class="text-muted">Application That Tracks COVID-19 Cases</small>
+</h3>
+  </div>
   <body>
-  <h1>CoronaVirus Tracker</h1>
-  <p>This Application shows the Covid-19 cases all over the world</p>
   <div class="jumbotron">
   <h1 class="display-4" th:text="${totalReportedCases}"></h1>
   <p class="lead">Total Cases Reported</p>
@@ -20,6 +23,7 @@
   <span>Cases Reported since yesterday</span>
   <span th:text="${totalDiffCases}"></span>
   </p>
+   <a href="IndiaCases" class="btn btn-success"> <i class="fa fa-arrow-circle-o-left"></i>&nbsp;IndiaCases</a>
 </div>
   
         <table class="table">
@@ -38,5 +42,5 @@
     </table>
   </div>
   </body>
-
+ <div th:replace="templates/footer :: footer">&copy; 2016 The Static Templates</div>
 </html>
